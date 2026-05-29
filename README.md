@@ -1,31 +1,44 @@
 # Kaan Myumyun
 
-I am a Software Engineering student actively transitioning into a DevOps and Backend Engineering role. My primary focus is on automating deployments, configuring CI/CD pipelines, and managing cloud infrastructure, all built on top of a strong foundation in .NET and server-side architecture.
+Software Engineering student specializing in DevOps, cloud infrastructure, and backend engineering. I build and automate production-grade systems — from CI/CD pipelines and containerized deployments to Kubernetes clusters and full observability stacks.
 
 ## About My Focus
-- Currently implementing DevOps methodologies: continuous integration, container orchestration, and AWS infrastructure management.
-- Pursuing a Bachelor's in Software Engineering at Trakia University (Expected 2027).
-- Experienced in building and securing REST APIs using C# and ASP.NET Core.
+
+- Completing the SoftUni DevOps and Cloud Programme (March–November 2026): Linux Sysadmin ✓, Azure Essentials ✓, Containerization (in progress), Kubernetes, CI/CD & Monitoring
+- Pursuing a Bachelor's in Software Engineering at Trakia University (Expected 2027)
+- Building real infrastructure, not just tutorial projects — everything is deployed and running
 
 ## Technical Arsenal
-- **DevOps & Cloud:** GitHub Actions (CI/CD), Docker, Docker Compose, AWS EC2, Nginx, systemd, Bash Scripting.
-- **Backend Engineering:** C#, ASP.NET Core Web API, Entity Framework Core, REST APIs.
-- **Databases:** PostgreSQL, SQL Server, MySQL.
-- **Tools & Observability:** Git, Swagger / OpenAPI.
 
-## Featured DevOps Deployment
+- **DevOps & Infrastructure:** Docker, Docker Compose, Kubernetes (k3s), Terraform, GitHub Actions CI/CD, Nginx, Bash scripting, Linux (daily use)
+- **Cloud:** AWS EC2, Azure VM, Cloudflare Pages
+- **Observability:** Prometheus, Grafana, Grafana Loki, Promtail
+- **Backend:** C#, ASP.NET Core Web API, Entity Framework Core, REST APIs, JWT
+- **Databases:** PostgreSQL (Neon serverless), SQL Server, MySQL
+- **Tools:** Git, Swagger / OpenAPI
+
+## Certifications
+
+- Linux System Administration — March 2026
+- Azure Essentials — April 2026
+
+## Featured Projects
 
 ### [Hospital Management System](https://github.com/KaanMyumyun/HospitalSystem)
-While the application is a secure RESTful backend, my main focus on this repository is its deployment architecture and automation:
-- **CI/CD Pipeline:** Configured GitHub Actions to automatically run unit tests on every push to the main branch.
-- **Containerization:** Automated Docker image builds that push directly to Docker Hub upon successful testing. Images are strictly tagged with both `latest` and the specific commit SHA for complete traceability.
-- **Cloud Infrastructure:** Provisioned and deployed experimentally on AWS EC2 (Amazon Linux 2023).
-- **Orchestration & Routing:** Utilized Docker Compose for orchestration, configured Nginx as a reverse proxy, and implemented a systemd service to ensure automated container restarts on system boot.
+Full-stack hospital platform with a production-grade infrastructure stack:
+- **Kubernetes (k3s):** 2 backend + 2 frontend replicas, self-healing pods, Traefik Ingress, automated SSL via cert-manager
+- **IaC:** Full Terraform provisioner — one `terraform apply` spins up EC2, installs k3s, provisions the entire stack
+- **CI/CD:** GitHub Actions — tests, builds Docker images, pushes to Docker Hub, deploys on merge to main
+- **Observability:** Prometheus + Grafana (metrics, alerts) + Loki + Promtail (centralized logging) — dashboards auto-provisioned from GitHub
+- **Multi-environment:** Free tier (Cloudflare Pages + Render + Neon) and self-hosted (AWS EC2 + Kubernetes)
 
-## Additional Backend Projects
-- **[URL shortner](https://github.com/KaanMyumyun/UrlShortener):** A service highlighting RESTful endpoint design, data persistence logic, and database integration.
-- **Pokemon Review App:()** C# and ASP.NET Core application demonstrating CRUD functionality and relational database management.
+### [URL Shortener](https://github.com/KaanMyumyun/UrlShortener)
+- Deployed on Azure VM with Docker Compose and GitHub Actions CI/CD
+- Free tier: Cloudflare Pages + Render + Neon
+- Terraform provisioner for one-command AWS deployment
 
 ## Contact
-- **Email:** kaan.myumyunn@gmail.com 
+
+- **Email:** kaan.myumyunn@gmail.com
 - **GitHub:** [KaanMyumyun](https://github.com/KaanMyumyun)
+- **LinkedIn:** [Kaan-Myumyun](https://linkedin.com/in/Kaan-Myumyun)
